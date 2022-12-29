@@ -37,10 +37,10 @@
             const currenttask = task[0];
             currenttask.completed = !currenttask.completed;
             renderList();
-            showNotification('task toggled successfully');
+            // showNotification('task toggled successfully');
             return;
         }
-        showNotification("could not toggle the task");
+        // showNotification("could not toggle the task");
     }
 
     function deleteTask(taskId) {
@@ -49,17 +49,17 @@
         })
         tasks = newtasks;
         renderList();
-        showNotification('Task deleted successfully');
+        // showNotification('Task deleted successfully');
     }
 
     function addTask(task) {
         if (task) {
             tasks.push(task);
             renderList();
-            showNotification('Task added successfully');
+            // showNotification('Task added successfully');
             return;
         }
-        showNotification("Task can't added");
+        // showNotification("Task can't added");
     }
 
     function showNotification(title) {
